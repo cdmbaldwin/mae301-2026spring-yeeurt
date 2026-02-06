@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+venv/
+env/
+.venv/
+
+# Distribution and packaging
+.egg/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.manifest
+*.spec
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pytest
+.pytest_cache/
+
+# Sphinx documentation
+build/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.bak
+*.swo
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Deep Learning
+# Model checkpoints
+*.pt
+*.pth
+*.safetensors
+checkpoint/
+model_weights/
+runs/
+logs/
+tb_logs/
+
+# Large datasets (often downloaded, not part of repo)
+data/
+datasets/
+# Keep small data files, ignore large ones
+!data/*.txt
+!data/*.json
+!data/*.csv
+!data/tiny_shakespeare.txt # Example for nanoGPT project
+
+# Temporary files created by Gemini CLI
+.gemini/tmp/
+
+# Reports and plots (generated, can be re-generated)
+reports/*.html
+reports/*.pdf
+reports/*.md
+plots/*.png
+plots/*.jpg
