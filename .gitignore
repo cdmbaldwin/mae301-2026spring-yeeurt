@@ -1,79 +1,209 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python/
-venv/
-env/
-.venv/
-
-# Distribution and packaging
-.egg/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.manifest
-*.spec
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# MyPy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# pytest
-.pytest_cache/
-
-# Sphinx documentation
-build/
-
-# IDEs and editors
-.vscode/
-.idea/
-*.swp
-*.bak
-*.swo
-
-# OS-specific
-.DS_Store
-Thumbs.db
-
-# Deep Learning
-# Model checkpoints
-*.pt
-*.pth
-*.safetensors
-checkpoint/
-model_weights/
-runs/
-logs/
-tb_logs/
-
-# Large datasets (often downloaded, not part of repo)
-data/
-datasets/
-# Keep small data files, ignore large ones
-!data/*.txt
-!data/*.json
-!data/*.csv
-!data/tiny_shakespeare.txt # Example for nanoGPT project
-
-# Temporary files created by Gemini CLI
-.gemini/tmp/
-
-# Reports and plots (generated, can be re-generated)
-reports/*.html
-reports/*.pdf
-reports/*.md
-plots/*.png
-plots/*.jpg
+1 # Byte-compiled / optimized / DLL files
+     2 __pycache__/
+     3 *.pyc
+     4 *.pyo
+     5 *.pyd
+     6 .Python/
+     7 *.py[codz]
+     8 *$py.class
+     9 *.so
+    10
+    11 # Distribution / packaging
+    12 .egg/
+    13 .eggs/
+    14 lib/
+    15 lib64/
+    16 parts/
+    17 sdist/
+    18 var/
+    19 wheels/
+    20 share/python-wheels/
+    21 *.egg-info/
+    22 .installed.cfg
+    23 *.manifest
+    24 *.spec
+    25 MANIFEST
+    26 build/
+    27 develop-eggs/
+    28 dist/
+    29 downloads/
+    30 eggs/
+    31
+    32 # PyInstaller
+    33 *.manifest
+    34 *.spec
+    35
+    36 # Installer logs
+    37 pip-log.txt
+    38 pip-delete-this-directory.txt
+    39
+    40 # Unit test / coverage reports
+    41 htmlcov/
+    42 .tox/
+    43 .nox/
+    44 .coverage
+    45 .coverage.*
+    46 .cache
+    47 nosetests.xml
+    48 coverage.xml
+    49 *.cover
+    50 *.py.cover
+    51 .hypothesis/
+    52 .pytest_cache/
+    53 cover/
+    54
+    55 # Translations
+    56 *.mo
+    57 *.pot
+    58
+    59 # Django stuff:
+    60 *.log
+    61 local_settings.py
+    62 db.sqlite3
+    63 db.sqlite3-journal
+    64
+    65 # Flask stuff:
+    66 instance/
+    67 .webassets-cache
+    68
+    69 # Scrapy stuff:
+    70 .scrapy
+    71
+    72 # Sphinx documentation
+    73 docs/_build/
+    74
+    75 # PyBuilder
+    76 .pybuilder/
+    77 target/
+    78
+    79 # Jupyter Notebook
+    80 .ipynb_checkpoints
+    81
+    82 # IPython
+    83 profile_default/
+    84 ipython_config.py
+    85
+    86 # pyenv
+    87 # .python-version
+    88
+    89 # pipenv
+    90 #Pipfile.lock
+    91
+    92 # UV
+    93 #uv.lock
+    94
+    95 # poetry
+    96 #poetry.lock
+    97 #poetry.toml
+    98
+    99 # pdm
+   100 #pdm.lock
+   101 #pdm.toml
+   102 .pdm-python
+   103 .pdm-build/
+   104
+   105 # pixi
+   106 #pixi.lock
+   107 .pixi
+   108
+   109 # PEP 582
+   110 __pypackages__/
+   111
+   112 # Celery stuff
+   113 celerybeat-schedule
+   114 celerybeat.pid
+   115
+   116 # SageMath parsed files
+   117 *.sage.py
+   118
+   119 # Environments
+   120 .env
+   121 .envrc
+   122 .venv
+   123 env/
+   124 venv/
+   125 ENV/
+   126 env.bak/
+   127 venv.bak/
+   128
+   129 # Spyder project settings
+   130 .spyderproject
+   131 .spyproject
+   132
+   133 # Rope project settings
+   134 .ropeproject
+   135
+   136 # mkdocs documentation
+   137 /site
+   138
+   139 # mypy
+   140 .mypy_cache/
+   141 .dmypy.json
+   142 dmypy.json
+   143
+   144 # Pyre type checker
+   145 .pyre/
+   146
+   147 # pytype static type analyzer
+   148 .pytype/
+   149
+   150 # Cython debug symbols
+   151 cython_debug/
+   152
+   153 # PyCharm
+   154 #.idea/
+   155
+   156 # Abstra
+   157 .abstra/
+   158
+   159 # Visual Studio Code
+   160 # .vscode/
+   161
+   162 # Ruff stuff:
+   163 .ruff_cache/
+   164
+   165 # PyPI configuration file
+   166 .pypirc
+   167
+   168 # Cursor
+   169 .cursorignore
+   170 .cursorindexingignore
+   171
+   172 # Marimo
+   173 marimo/_static/
+   174 marimo/_lsp/
+   175 __marimo__/
+   176
+   177 # OS-specific
+   178 .DS_Store
+   179 Thumbs.db
+   180
+   181 # Deep Learning
+   182 # Model checkpoints
+   183 *.pt
+   184 *.pth
+   185 *.safetensors
+   186 checkpoint/
+   187 model_weights/
+   188 runs/
+   189 logs/
+   190 tb_logs/
+   191
+   192 # Large datasets (often downloaded, not part of repo)
+   193 data/
+   194 datasets/
+   195 # Keep small data files, ignore large ones
+   196 !data/*.txt
+   197 !data/*.json
+   198 !data/*.csv
+   199 !data/tiny_shakespeare.txt # Example for nanoGPT project
+   200
+   201 # Temporary files created by Gemini CLI
+   202 .gemini/tmp/
+   203
+   204 # Reports and plots (generated, can be re-generated)
+   205 reports/*.html
+   206 reports/*.pdf
+   207 reports/*.md
+   208 plots/*.png
+   209 plots/*.jpg
